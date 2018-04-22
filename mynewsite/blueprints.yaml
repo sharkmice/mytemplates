@@ -1,0 +1,27 @@
+name: Mynewsite
+version: 0.1.0
+description: mysite
+icon: rebel
+author:
+  name: tvs
+  email: t.velmahos@gmail.com
+homepage: https://github.com/tvs/grav-theme-mynewsite
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/tvs/grav-theme-mynewsite/issues
+readme: https://github.com/tvs/grav-theme-mynewsite/blob/develop/README.md
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool
